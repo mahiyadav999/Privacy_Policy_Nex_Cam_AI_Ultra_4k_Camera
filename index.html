@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Nex Cam</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --surface-color: #161b22;
+            --surface-border: #30363d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --accent-gold: #e5a93c;
+            --accent-green: #3fb950;
+            --accent-blue: #58a6ff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 20px 16px 40px 16px;
+            line-height: 1.65;
+            -webkit-text-size-adjust: 100%;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--surface-border);
+        }
+        .app-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #238636, #2ea043);
+            color: white;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 12px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0 0 6px 0;
+            color: var(--text-primary);
+        }
+        .last-updated {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        .card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--surface-border);
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 16px;
+        }
+        h2 {
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: var(--accent-gold);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        p {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: #c9d1d9;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+        ul {
+            margin: 8px 0;
+            padding-left: 20px;
+            font-size: 14px;
+            color: #c9d1d9;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .pill {
+            display: inline-block;
+            background: rgba(88, 166, 255, 0.15);
+            color: var(--accent-blue);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 6px;
+            border: 1px solid rgba(88, 166, 255, 0.3);
+        }
+        .highlight-box {
+            background: rgba(63, 185, 80, 0.1);
+            border-left: 3px solid var(--accent-green);
+            padding: 12px 14px;
+            border-radius: 0 8px 8px 0;
+            margin: 12px 0;
+        }
+        .contact-box {
+            background: rgba(229, 169, 60, 0.1);
+            border: 1px dashed var(--accent-gold);
+            padding: 14px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="app-badge">Google Play Verified Compliance</div>
+        <h1>Nex Cam Privacy Policy</h1>
+        <div class="last-updated">Effective Date: September 18, 2026</div>
+    </div>
+
+    <div class="highlight-box">
+        <p><strong>Core Guarantee:</strong> Nex Cam is designed with privacy-by-default architecture. Your photos, videos, audio recordings, and sensor telemetry remain <strong>100% strictly local to your device</strong>. We do not operate external media servers, remote cloud sync, or user profiling databases.</p>
+    </div>
+
+    <div class="card">
+        <h2>1. Information We Access & Purpose</h2>
+        <p>Nex Cam requests only permissions strictly necessary to deliver pro-grade photography and video recording features:</p>
+        <ul>
+            <li><strong>Camera (<span class="pill">android.permission.CAMERA</span>):</strong> Used exclusively to deliver live viewfinder preview, capture Ultra HD still photos, and record 4K/60fps video. Video frames are processed in-memory and written directly to local storage.</li>
+            <li><strong>Microphone (<span class="pill">android.permission.RECORD_AUDIO</span>):</strong> Used solely to capture high-fidelity audio during active video recordings and optional voice shutter trigger commands. Voice triggers are evaluated strictly on-device.</li>
+            <li><strong>Location (<span class="pill">ACCESS_FINE_LOCATION</span> / <span class="pill">ACCESS_COARSE_LOCATION</span>):</strong> Entirely optional. When enabled by the user in Settings, location coordinates and altitude are saved directly into the EXIF metadata of captured photos. Never transmitted to any third party.</li>
+            <li><strong>Storage / Media (<span class="pill">READ_MEDIA_IMAGES</span> / <span class="pill">READ_MEDIA_VIDEO</span>):</strong> Required to save your captured pictures and videos into your chosen media directory (e.g., Pictures/NexCam or DCIM/Camera) and display them in the built-in Gallery and Editor.</li>
+            <li><strong>Vibration (<span class="pill">android.permission.VIBRATE</span>):</strong> Provides haptic feedback on shutter press and Pro dial tactile adjustments.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>2. Third-Party Advertising (Google AdMob)</h2>
+        <p>To keep Nex Cam free for all users, we partner with <strong>Google AdMob</strong> (Google Ireland Limited / Google LLC) to serve advertisements. AdMob may automatically collect non-sensitive diagnostic and advertising identifiers in compliance with Google Play Developer Policies:</p>
+        <ul>
+            <li>Advertising ID (GAID / AAID) for ad attribution and frequency capping.</li>
+            <li>Non-identifying device metrics (device model, screen resolution, operating system version).</li>
+            <li>Performance indicators and crash diagnostics to ensure optimal ad delivery.</li>
+        </ul>
+        <p>For more details on how Google processes ad data, please review Google's official privacy policy: <a href="https://policies.google.com/privacy" style="color: var(--accent-blue); text-decoration: none;">https://policies.google.com/privacy</a>.</p>
+    </div>
+
+    <div class="card">
+        <h2>3. Data Retention & User Rights</h2>
+        <p>Because all captured media is saved strictly to your device's internal storage or MediaStore:</p>
+        <ul>
+            <li><strong>Immediate Control:</strong> You can delete any photo or video at any moment using the built-in Gallery or any Android file manager. Deleted files are permanently removed from your storage.</li>
+            <li><strong>Permission Revocation:</strong> You may grant or revoke Camera, Microphone, or Location access at any time through Android System Settings &gt; Apps &gt; Nex Cam &gt; Permissions.</li>
+            <li><strong>No Cloud Retention:</strong> We have no access to your media files, so there is no remote copy to delete.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>4. Children's Privacy</h2>
+        <p>Nex Cam is intended for general audiences and does not knowingly collect personal information from children under the age of 13. If you believe your child has provided personal information through our services, please contact us immediately so that we can take appropriate measures.</p>
+    </div>
+
+    <div class="card">
+        <h2>5. Policy Updates</h2>
+        <p>We may periodically update this Privacy Policy to reflect app improvements or regulatory updates. Any changes will be posted within this page and in the Google Play Store store listing.</p>
+    </div>
+
+    <div class="contact-box">
+        <p><strong>Contact the Developer</strong></p>
+        <p>If you have any questions or feedback regarding privacy in Nex Cam, please contact us at:</p>
+        <p style="color: var(--accent-gold); font-weight: bold; margin-top: 4px;">mahiyadav999@gmail.com</p>
+    </div>
+</body>
+</html>
